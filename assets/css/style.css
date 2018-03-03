@@ -1,6 +1,22 @@
+body{
+    background: url(../images/funbg.jpg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+               
+}
+
+.container{
+
+    opacity: .9;
+}
+
 .page-header{
     margin-left: 0;
     margin-right: 0;
+    background: white;
+    border-radius: 20px;
 }
 
 .category{
