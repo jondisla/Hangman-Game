@@ -38,6 +38,10 @@ li{
     display: inline-block
 }
 
+#attempts-left{
+    font-size: 30px;
+}
+
 @media screen and (max-width: 550px){
     .page-header img{
         width: 100%;

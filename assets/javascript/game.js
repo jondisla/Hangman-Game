@@ -4,7 +4,7 @@ var newRandWord;
 var wins = 0;
 var loss = 0;
 var used = [];
-var left = [];
+var left = 7;
 
  document.onkeypress = function(event) {
     var string = String.fromCharCode(event.keyCode).toLowerCase();
@@ -21,35 +21,16 @@ var left = [];
     // var a = words[0].split(words);
 
     
-    
-    // if (string == "e"){
-    // var e = a[0].slice(0,1);
-    //    console.log(e);
-    // }if (string === "l"){
-    // var l = a[0].slice(0,2);
-    //    console.log(l);
-    // }if (string === "e"){
-    // var ee = a[0].slice(0,3);
-    //    console.log(ee);
-    // }if (string === "p"){
-    // var p = a[0].slice(0,4);
-    //    console.log(p);
-    // }if (string === "h"){
-    // var h = a[0].slice(0,5);
-    //    console.log(h);
-    // }if (string === "a"){
-    // var a = a[0].slice(0,6);
-    //    console.log(a);
-    // }if (string === "n"){
-    // var n = a[0].slice(0,7);
-    //    console.log(n);
-    // }if (string === "t"){
-    // var t = a[0].slice(0,8);
-    //    console.log(t);
-    // }else
-    //     alert();
-    // }game();
+    if (event.key === string){
+        document.getElementById("attempts-left").innerHTML = (left --);
+    }if(left === -1){
+        alert("Game Over!")
+    }
 
+    if (event.key === true){
+        document.getElementById("ramword").innerHTML = underScore.join(string);
+        console.log(underScore)
+    }
     
 };  
 
@@ -65,14 +46,14 @@ var left = [];
         }
          randWords();
 
-    function wordZero(){
-       var a = words[0].split(words);
-    //    for (i = 0; i < words[0].length; i++)
-    if (words[0] === "a");
-    var b = a.slice(0,1);
-       console.log(b)
-        }
-        wordZero();
+    // function wordZero(){
+    //    var a = words[0].split(words);
+    // //    for (i = 0; i < words[0].length; i++)
+    // if (words[0] === "a");
+    // var b = a.slice(0,1);
+    //    console.log(b)
+    //     }
+    //     wordZero();
     
 
     //     ramword.addEventListener("keypress", function(){
@@ -80,8 +61,11 @@ var left = [];
         
     //     })
     // attempts();
-    function atleft(){
-    var attempts = document.getElementById("attempts-left").innerHTML = left;
-    console.log(attempts);
-    }
-    atleft();
+    // function atleft(){
+    // var attempts = document.getElementById("attempts-left").innerHTML = left;
+    // if (event.key === "e"){
+    // alert("gotit")
+    // console.log(attempts);
+    // }
+    // }
+    // atleft();
