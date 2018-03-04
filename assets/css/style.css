@@ -40,10 +40,31 @@ li{
 
 #attempts-left{
     font-size: 30px;
+    text-align: center;
 }
 
 @media screen and (max-width: 550px){
     .page-header img{
         width: 100%;
     } 
+}
+
+@media screen and (max-height: 733px){
+    .well{
+        height: 75px;
+    }
+}
+
+@media screen and (max-height: 733px){
+    h1{
+        height: 75px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-height: 733px){
+    #ramword{
+        height: 95px;
+        margin-top: -20px;
+    }
 }
